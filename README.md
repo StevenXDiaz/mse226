@@ -8,7 +8,7 @@ Download `hotel_bookings.csv` from https://www.kaggle.com/datasets/jessemostipak
 Python 3.12. `python -m venv .venv && .venv/bin/pip install -r requirements.txt`
 
 ## Run (Part 1)
-1. `.venv/bin/python explore.py`: Section 5 exploration on the development data; saves `outputs/exploration.png`.
+1. `.venv/bin/python exploration.py`: Section 5 exploration on the development data; prints missing values, correlations with cancellation, correlations between covariates and cancellation rates by category.
 2. `.venv/bin/python train.py`: Section 6 model comparison (5-fold CV, development data only); saves
    `outputs/model_comparison_<hotel>.csv`, calibration plots and the final pipelines
    `outputs/cancellation_model_<hotel>.joblib`. About 5 minutes.
